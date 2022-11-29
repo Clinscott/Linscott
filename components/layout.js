@@ -6,7 +6,7 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Button from "./button";
 import Header from "./header";
-export const siteTitle = "Northammer - Home";
+export const siteTitle = "Linscott, Craig - Home";
 
 export default function Layout({ children, home }) {
   return (
@@ -15,7 +15,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/northammerIcon.ico" />
         <meta
           name="description"
-          content="The place for engaging and informative Warhammer content."
+          content="Craig Linscott's personal profile page."
         />
         <meta property="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />

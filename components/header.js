@@ -5,7 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 import Image from "next/image";
 import Button from "./button";
 
-const name = "Northammer";
+const name = "Linscott, Craig";
 const profilePicStatic = {
   width: 768,
   height: 256,
@@ -75,10 +75,9 @@ export default function Header(props) {
         )}
       </div>
       <div className={styles.line}>
-        <Button title="40k" link="/posts/40k"></Button>
-        <Button title="Fantasy" link="/posts/fantasy"></Button>
-        {/*<Button title='Cool Gentleman' link="/posts/coolGentleman"></Button>*/}
-        <Button title="The Founders" link="/posts/theFounders"></Button>
+        <Button title="FraudFinder" link="/posts/fraudFinder"></Button>
+        <Button title="TriFighter" link="/posts/TriFighter"></Button>
+        <Button title="Craig Linscott" link="/posts/CraigLinscott"></Button>
       </div>
     </header>
   );

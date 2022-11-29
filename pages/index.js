@@ -42,21 +42,8 @@ export default function Home({ allPostsData }) {
           styles={utilStyles.image}
         />
         <section className={utilStyles.headingMd}>
-          <h4>
-            We are Northammer!
-            <br /> Together we look to provide exciting, engaging and
-            informative Warhammer content.
-          </h4>
+          <h4>Linscott, Craig</h4>
         </section>
-        <Image
-          priority
-          src="/images/NH-BradFull.gif"
-          className={utilStyles.borderCircle}
-          height={founderImage.height}
-          width={founderImage.width}
-          alt="Bradley Linscott"
-          styles={utilStyles.image}
-        />
       </div>
       <section
         className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.blogArticle}`}
