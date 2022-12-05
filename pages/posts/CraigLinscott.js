@@ -7,18 +7,17 @@ import utilStyles from "../../styles/utils.module.css";
 import layoutStyle from "../../components/layout.module.css";
 
 const founder = {
-  brad: "They say the ground shook and the seas rose when this Founders first cry was heard in the world. Hailing from an island, time has its own meaning to Bradley. Underestimate him at your own peril.",
-  craig:
-    "Born only a stones throw from King Arthurs Round Table this Founder has longed for the days of justice and conquest. One day the world will be his, but until that day perhaps this tabletop will do.",
+   craig:
+    "Born only a stones throw from King Arthurs Round Table this Founder has longed for the days of justice and conquest. One day the world will be his, but until that day perhaps this screen will do.",
 };
 
 export default function FirstPost() {
   return (
     <Layout>
       <Head>
-        <title>The Founders</title>
+        <title>Craig N. Linscott</title>
       </Head>
-      <h1 className={utilStyles.headingXl}>The Founders</h1>
+      <h1 className={utilStyles.headingXl}>Craig N. Linscott</h1>
       <div className={utilStyles.blogArticle}>
         <div className={utilStyles.rowC}>
           <Founders
@@ -34,20 +33,6 @@ export default function FirstPost() {
             leadership="8 "
             save="4+"
             description={founder.craig}
-          />
-          <Founders
-            image="/images/NH-Brad.gif"
-            name="Bradley Linscott"
-            move="6 "
-            ws="3 "
-            bs="3 "
-            str="4 "
-            tough="4 "
-            wounds="8 "
-            attacks="5 "
-            leadership="9 "
-            save="4+"
-            description={founder.brad}
           />
         </div>
       </div>

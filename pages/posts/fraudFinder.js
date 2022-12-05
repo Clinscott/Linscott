@@ -1,19 +1,16 @@
 import Layout, { siteTitle } from "../../components/layout";
 import Head from "next/head";
 import utilStyles from "../../styles/utils.module.css";
-import VideoPlayer from "../../components/VideoPlayer";
 
-export default function FortyK() {
+
+export default function FraudFinder() {
   return (
     <Layout>
       <Head>
-        <title>40k</title>
+        <title>Fraud Finder</title>
       </Head>
-      <h1 className={utilStyles.headingXl}>40k</h1>
-      <VideoPlayer
-        title="The Best Terrain Guide"
-        src="https://www.youtube.com/watch?v=lTVSTduzf-M"
-      />
+      <h1 className={utilStyles.headingXl}>FraudFinder</h1>
+      
     </Layout>
   );
 }
