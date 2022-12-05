@@ -3,6 +3,7 @@ import { getAllPostsIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
+import Link from "next/link";
 
 export default function Post({ postData }) {
   return (
@@ -15,9 +16,9 @@ export default function Post({ postData }) {
       <article className={utilStyles.blogArticle}>
         <div className={utilStyles.lightText2}>
           <address class={postData.author}>
-            <a rel="author" href="/posts/theFounders">
+            <Link rel="author" href="/posts/theFounders">
               {postData.author}
-            </a>
+            </Link>
           </address>
           <Date dateString={postData.date} />
         </div>

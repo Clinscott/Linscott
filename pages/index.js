@@ -59,6 +59,7 @@ export default function Home({ allPostsData }) {
                         ? "/images/NH-Craig.gif"
                         : "/images/NH-Brad.gif"
                     }
+                    alt='Pixel Craig.'
                     width={profilePic.width}
                     height={profilePic.height}
                   />
