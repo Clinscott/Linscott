@@ -43,7 +43,7 @@ export default function Header(props) {
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, [scrollTop]);
+  }, [scrollTop, scrolling]);
 
   return (
     <header>
