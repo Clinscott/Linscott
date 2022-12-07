@@ -21,8 +21,8 @@ const profilePic = {
 };
 
 const founderImage = {
-  width: 512,
-  height: 512,
+  width: 256,
+  height: 256,
 };
 
 export default function Home({ allPostsData }) {
@@ -32,7 +32,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <div className={utilStyles.rowC2}>
-        <Image
+        {/* <Image
           priority
           src="/images/NH-CraigFull.gif"
           className={utilStyles.borderCircle}
@@ -40,9 +40,10 @@ export default function Home({ allPostsData }) {
           width={founderImage.width}
           alt="Craig Linscott"
           styles={utilStyles.image}
-        />
+        /> */}
         <section className={utilStyles.headingMd}>
-          <h4>Linscott, Craig</h4>
+          <h4>Welcome, stay awhile and read.</h4>
+          <></>
         </section>
       </div>
       <section

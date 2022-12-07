@@ -7,7 +7,7 @@ import Button from "./button";
 
 const name = "Linscott, Craig";
 const profilePicStatic = {
-  width: 768,
+  width: 500,
   height: 256,
 };
 const profilePicOnScroll = {
@@ -17,34 +17,6 @@ const profilePicOnScroll = {
 let profilePic = profilePicStatic;
 
 export default function Header(props) {
-  const [scrolling, setScrolling] = useState(false);
-  const [scrollTop, setScrollTop] = useState(0);
-
-  useEffect(() => {
-    function onScroll() {
-      let currentPosition = window.pageYOffset; // or use document.documentElement.scrollTop;
-      if (scrolling && currentPosition >= 100) {
-        console.log("Scrolling Down");
-        profilePic = profilePicOnScroll;
-        profilePicOnScroll.width -= 48;
-        profilePicOnScroll.height -= 16;
-        setScrolling(false);
-      } else {
-        console.log("Scrolling Up");
-        setScrolling(true);
-      }
-      if (currentPosition === 0) {
-        profilePic = profilePicStatic;
-        profilePicOnScroll.height = 275;
-        profilePicOnScroll.width = 750;
-      }
-      setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
-    }
-
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [scrollTop, scrolling]);
-
   return (
     <header>
       <div className={styles.header}>
@@ -52,7 +24,7 @@ export default function Header(props) {
           <>
             <Image
               priority
-              src="/images/profile.png"
+              src="/images/NH-Craig.gif"
               height={profilePic.height}
               width={profilePic.width}
               alt={name}
@@ -64,7 +36,7 @@ export default function Header(props) {
               <a>
                 <Image
                   priority
-                  src="/images/profile.png"
+                  src="/images/NH-Craig.gif"
                   height={profilePic.height}
                   width={profilePic.width}
                   alt={name}
@@ -72,13 +44,15 @@ export default function Header(props) {
               </a>
             </Link>
           </>
-        )}
+        )}    
+      
+          <div id="bar" className={styles.line}>
+            <Button title="FraudFinder" link="/posts/fraudFinder"></Button>
+            <Button title="TriFighter" link="/posts/TriFighter"></Button>
+            <Button title="Resume" link="/posts/CraigLinscott"></Button>
+          </div>
       </div>
-      <div className={styles.line}>
-        <Button title="FraudFinder" link="/posts/fraudFinder"></Button>
-        <Button title="TriFighter" link="/posts/TriFighter"></Button>
-        <Button title="Craig Linscott" link="/posts/CraigLinscott"></Button>
-      </div>
+ 
     </header>
   );
 }

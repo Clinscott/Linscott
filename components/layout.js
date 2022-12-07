@@ -12,7 +12,7 @@ export default function Layout({ children, home }) {
   return (
     <div>
       <Head>
-        <link rel="icon" href="/northammerIcon.ico" />
+        <link rel="icon" href="/NH-Craig.ico" />
         <meta
           name="description"
           content="Craig Linscott's personal profile page."

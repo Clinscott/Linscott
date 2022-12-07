@@ -15,7 +15,7 @@ export default function FirstPost() {
   return (
     <Layout>
       <Head>
-        <title>Craig N. Linscott</title>
+        <title>Resume</title>
       </Head>
       <h1 className={utilStyles.headingXl}>Craig N. Linscott</h1>
       <div className={utilStyles.blogArticle}>
