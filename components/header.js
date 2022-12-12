@@ -15,7 +15,6 @@ const CRAIGN = {
   height: 256,
 };
 
-
 export default function Header(props) {
   return (
     <header>
@@ -38,28 +37,38 @@ export default function Header(props) {
             />
           </div>
         ) : (
-          <>
+          <div className={utilStyles.floatChild1}>
             <Link href="/">
               <a>
                 <Image
                   priority
-                  src="/images/NH-Craig.gif"
-                  height={profilePic.height}
-                  width={profilePic.width}
+                  src="/images/CRAIG.png"
+                  height={CRAIGN.height}
+                  width={CRAIGN.width}
                   alt={name}
                 />
               </a>
             </Link>
-          </>
-        )}    
-      
-          <div id="bar" className={styles.line}>
-            <Button title="FraudFinder" link="/posts/fraudFinder"></Button>
-            <Button title="TriFighter" link="/posts/TriFighter"></Button>
-            <Button title="Resume" link="/posts/CraigLinscott"></Button>
+            <Link href="/">
+              <a>
+                <Image
+                  priority
+                  src="/images/LINSCOTT.png"
+                  height={LINSCOTT.height}
+                  width={LINSCOTT.width}
+                  alt={name}
+                />
+              </a>
+            </Link>
           </div>
+        )}
+
+        <div id="bar" className={styles.line}>
+          <Button title="FraudFinder" link="/posts/fraudFinder"></Button>
+          <Button title="TriFighter" link="/posts/TriFighter"></Button>
+          <Button title="Resume" link="/posts/CraigLinscott"></Button>
+        </div>
       </div>
- 
     </header>
   );
 }
