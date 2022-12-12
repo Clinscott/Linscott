@@ -6,8 +6,13 @@
 
 .floatContainer{
   display: flex;
-  border: 3px solid #fff;
   padding: 20px;
+}
+
+.floatContainer1{
+  display:flex;
+  padding: 20px;
+  
 }
 
 .floatChild{
@@ -16,6 +21,13 @@
   float: left;
   padding: 20px;
   border: 2px solid red;
+}
+
+.floatChild1{
+  flex: 1;
+  width: auto;
+  float: left;
+  padding: 20px;
 }
 
 .image {

@@ -6,30 +6,37 @@ import Image from "next/image";
 import Button from "./button";
 
 const name = "Linscott, Craig";
-const profilePicStatic = {
-  width: 500,
+const LINSCOTT = {
+  width: 256,
   height: 256,
 };
-const profilePicOnScroll = {
-  width: 768,
+const CRAIGN = {
+  width: 256,
   height: 256,
 };
-let profilePic = profilePicStatic;
+
 
 export default function Header(props) {
   return (
     <header>
-      <div className={styles.header}>
+      <div className={`${styles.header} ${utilStyles.floatContainer1}`}>
         {props.home ? (
-          <>
+          <div className={utilStyles.floatChild1}>
             <Image
               priority
-              src="/images/NH-Craig.gif"
-              height={profilePic.height}
-              width={profilePic.width}
+              src="/images/CRAIG.png"
+              height={CRAIGN.height}
+              width={CRAIGN.width}
               alt={name}
             />
-          </>
+            <Image
+              priority
+              src="/images/LINSCOTT.png"
+              height={LINSCOTT.height}
+              width={LINSCOTT.width}
+              alt={name}
+            />
+          </div>
         ) : (
           <>
             <Link href="/">

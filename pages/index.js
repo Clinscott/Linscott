@@ -83,6 +83,7 @@ export default function Home({ allPostsData }) {
               <div className={utilStyles.rowC}>
                 <a className={utilStyles.imageF}>
                   <Image
+                  priority
                     src={
                       author === "Craig Linscott"
                         ? "/images/NH-Craig.gif"
